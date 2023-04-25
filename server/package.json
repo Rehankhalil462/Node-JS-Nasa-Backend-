@@ -1,0 +1,26 @@
+{
+  "name": "nasa-project-backend",
+  "version": "1.0.0",
+  "description": "NASA Mission Control Node JS Backend APIs",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "jest",
+    "test-watch": "jest --watch",
+    "start": "node src/server.js",
+    "watch": "nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "nodemon": "^2.0.22",
+    "supertest": "^6.3.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "csv-parse": "^5.3.8",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0"
+  }
+}
