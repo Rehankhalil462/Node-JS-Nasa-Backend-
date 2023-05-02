@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASEURL = "http://localhost:5000";
+const API_BASEURL = "http://localhost:5000/v1";
 
 async function httpGetPlanets() {
   // Load planets and return as JSON.

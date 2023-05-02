@@ -7,12 +7,13 @@
     "test": "jest",
     "test-watch": "jest --watch",
     "start": "node src/server.js",
-    "watch": "nodemon src/server.js"
+    "watch": "nodemon src/server.js",
+    "cluster": "pm2 start src/server.js -i max"
   },
   "keywords": [],
   "author": "",
-  "jest":{
-    "testEnvironment":"node"
+  "jest": {
+    "testEnvironment": "node"
   },
   "license": "ISC",
   "devDependencies": {
@@ -21,8 +22,10 @@
     "supertest": "^6.3.3"
   },
   "dependencies": {
+    "axios": "^1.4.0",
     "cors": "^2.8.5",
     "csv-parse": "^5.3.8",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mongoose": "^7.1.0",
     "morgan": "^1.10.0"
