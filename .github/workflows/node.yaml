@@ -6,10 +6,10 @@ on:
     branches: [master]
 jobs:
   build:
-      env:
-        CI: true
-      strategy:
-        node-version: [16.x, 14.x]
+    env:
+      CI: true
+    strategy:
+      node-version: [16.x, 14.x]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
